@@ -69,10 +69,10 @@
             <p>I'm <span class="typed" data-typed-items=" , Developer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
               <t>
-              <a href="#"><i class=""></i></a>
-              <a href="#"><i class="bi bi-envelope"></i></a>
-              <a href="#"><i class="bi bi-github"></i></a>
-              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a target="_blank" href="https://wa.me/+966541918924"><i class="bi bi-whatsapp"></i></a>
+              <a target="_blank" href="mailto:wesam.a.s196@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a target="_blank" href="https://github.com/wesam196/"><i class="bi bi-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/wesam-s-5a5990137"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@
               <div class="col-lg-6">
                 <ul>
 
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+966 541 918 924</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+966 541 918 924</span> </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>wesa,.a.s196@gmail.com</span></li>
                 </ul>
               </div>
@@ -417,11 +417,10 @@
     <div class="container">
       <h3 class="sitename">ًWesam Salem</h3>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+              <a target="_blank" href="https://wa.me/+966541918924"><i class="bi bi-whatsapp"></i></a>
+              <a target="_blank" href="mailto:wesam.a.s196@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a target="_blank" href="https://github.com/wesam196/"><i class="bi bi-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/wesam-s-5a5990137"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
