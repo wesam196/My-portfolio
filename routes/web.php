@@ -10,6 +10,7 @@ Route::get('/', function () {
 Route::get('/project/{id}',[BackendWork::class,'index']);
 Route::get('/creteForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
+Route::get('/read', [BackendWork::class , 'read']);
 
 Route::middleware([
     'auth:sanctum',

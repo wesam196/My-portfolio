@@ -39,4 +39,12 @@ class BackendWork extends Controller
 
         return redirect()->Back();
     }
+
+
+    public function read(){
+        $data = Project::all();
+
+        return view('admin.read' , ['data'=>$data]);
+    }
+
 }
