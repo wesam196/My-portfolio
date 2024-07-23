@@ -1,10 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Project;
 
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/project/{id}',[Project::class,'index']);
 
 Route::middleware([
     'auth:sanctum',
