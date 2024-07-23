@@ -1,13 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Project;
+use App\Http\Controllers\BackendWork;
 
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/project/{id}',[Project::class,'index']);
+Route::get('/project/{id}',[BackendWork::class,'index']);
+Route::get('/creteForm',[BackendWork::class,'create']);
+Route::post('/add_poject', [BackendWork::class , 'addProject']);
 
 Route::middleware([
     'auth:sanctum',
