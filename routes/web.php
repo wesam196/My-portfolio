@@ -11,6 +11,9 @@ Route::get('/project/{id}',[BackendWork::class,'index']);
 Route::get('/creteForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
 Route::get('/read', [BackendWork::class , 'read']);
+Route::get('/delete/{id}', [BackendWork::class , 'delete']);
+
+
 
 Route::middleware([
     'auth:sanctum',

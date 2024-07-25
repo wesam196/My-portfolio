@@ -47,4 +47,16 @@ class BackendWork extends Controller
         return view('admin.read' , ['data'=>$data]);
     }
 
+    public function delete($id){
+        $data = Project::Find($id);
+        $data->delete();
+
+        return redirect()->back()->with('msg', 'the category deleted');
+    }
+
+    public function update(){
+        
+    }
+
+
 }
