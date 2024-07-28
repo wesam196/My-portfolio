@@ -88,7 +88,7 @@ class BackendWork extends Controller
 
 
     public function imageGallary($id){
-        $data = Image::where('images', 'LIKE', '%' . $id . '%')->get();
+        $data = Image::where('projectId', 'LIKE',  $id )->get();
 
         return view('admin.imageGallary' , ['data'=>$data , 'id'=>$id]);
     }
@@ -107,4 +107,10 @@ class BackendWork extends Controller
         return redirect()->back()->with('msg', 'image added');
     }
 
+    public function deleteImage($id){
+        $data = image::FindorFail($id);
+        $data->delete();
+        
+        return redirect()->back()->with('msg', 'image Deleted');
+    }
 }
