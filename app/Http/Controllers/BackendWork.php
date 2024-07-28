@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
+use App\Models\Image;
 
 class BackendWork extends Controller
 {
@@ -85,5 +86,25 @@ class BackendWork extends Controller
         return redirect()->back()->with('msg', 'the product updated');
     }
 
+
+    public function imageGallary($id){
+        $data = Image::where('images', 'LIKE', '%' . $id . '%')->get();
+
+        return view('admin.imageGallary' , ['data'=>$data , 'id'=>$id]);
+    }
+
+    public function addimage($id , Request $request){
+        $data = new image;
+        
+        $data->projectId = $id;
+
+        $image = $request->image;
+        $imageName=time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move('gallary' , $imageName);
+        $data->images =$imageName ;
+
+        $data->save();
+        return redirect()->back()->with('msg', 'image added');
+    }
 
 }

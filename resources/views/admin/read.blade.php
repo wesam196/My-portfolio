@@ -65,6 +65,7 @@
           <td>image</td>
           <td>Delete</td>
           <td>Edit</td>
+          <td>Images</td>
           </tr>
           @foreach($data as $data)
           <tr>
@@ -93,6 +94,9 @@
         </td>
         <td>
             <a href="{{url('/update',$data->id)}}"  class="btn btn-success">Edit</a>
+        </td>
+        <td>
+          <a href="{{url('/imagesGallary',$data->id)}}" class="btn btn-success">Images Gallary</a>
         </td>
         </tr>
           @endforeach

@@ -14,6 +14,8 @@ Route::get('/read', [BackendWork::class , 'read']);
 Route::get('/delete/{id}', [BackendWork::class , 'delete']);
 Route::get('/update/{id}', [BackendWork::class , 'update']);
 Route::post('/confirmUpdate/{id}', [BackendWork::class , 'comfirmUpdate']);
+Route::get('/imagesGallary/{id}', [BackendWork::class , 'imageGallary']);
+Route::post('/addImage/{id}', [BackendWork::class , 'addimage']);
 
 
 

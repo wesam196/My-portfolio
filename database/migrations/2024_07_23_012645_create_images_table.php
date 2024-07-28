@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('projectId');  // Corrected this line
             $table->timestamps();
             $table->string('images');
 
-            $table->foreign('id')->references('id')->on('projects')->onDelete('cascade');
+            $table->foreign('projectId')->references('id')->on('projects')->onDelete('cascade');
 
         });
     }
