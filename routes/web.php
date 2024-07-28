@@ -12,6 +12,8 @@ Route::get('/creteForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
 Route::get('/read', [BackendWork::class , 'read']);
 Route::get('/delete/{id}', [BackendWork::class , 'delete']);
+Route::get('/update/{id}', [BackendWork::class , 'update']);
+Route::post('/confirmUpdate/{id}', [BackendWork::class , 'comfirmUpdate']);
 
 
 

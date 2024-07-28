@@ -92,7 +92,7 @@
              
         </td>
         <td>
-            <a href="{{url('/update_product',$data->id)}}"  class="btn btn-success">Edit</a>
+            <a href="{{url('/update',$data->id)}}"  class="btn btn-success">Edit</a>
         </td>
         </tr>
           @endforeach

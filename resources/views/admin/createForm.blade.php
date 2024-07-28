@@ -27,7 +27,7 @@
     <label for="framework">Framework</label>
     <input type="text" name="framework">
 <br>
-    <label for="link">Ling</label>
+    <label for="link">Link</label>
     <input type="text" name="link">
 <br>
     <label for="GitHub">GitHub Link</label>

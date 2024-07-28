@@ -54,8 +54,35 @@ class BackendWork extends Controller
         return redirect()->back()->with('msg', 'the category deleted');
     }
 
-    public function update(){
+
+    public function update($id){
+        $data = Project::FindorFail($id);
+
+        return view('admin.update' , ['data'=>$data]);
+    }
+
+    public function comfirmUpdate($id , Request $request){
         
+        $data = Project::Find($id);
+        $data->name = $request->name;
+        $data->description = $request->description;
+        
+
+
+        $image = $request->image;
+        if($image){
+        $imageName=time().'.'.$request->image->getClientOriginalExtension();
+        $request->image->move('product' , $imageName);
+        $data->image =$imageName ;
+        }
+
+        $data->language= $request->language;
+        $data->framework = $request->framework;
+        $data->link = $request->link;
+        $data->GitHubLink = $request->GitHub;
+        
+        $data->save();
+        return redirect()->back()->with('msg', 'the product updated');
     }
 
 
