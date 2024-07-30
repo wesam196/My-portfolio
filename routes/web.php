@@ -3,11 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackendWork;
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/project/{id}',[BackendWork::class,'index']);
+Route::get('/',[BackendWork::class,'index']);
+
+//Route::get('/project/{id}',[BackendWork::class,'index']);
 Route::get('/createForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
 Route::get('/read', [BackendWork::class , 'read']);

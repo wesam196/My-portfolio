@@ -8,9 +8,12 @@ use App\Models\Image;
 
 class BackendWork extends Controller
 {
-    public function index($id){
+    public function index(){
+        
+        $data = Project::select('id', 'name', 'image')->get();
+        //$projects = ['id' => $data->id, 'name' => $data->name, 'image' => $data->image];
 
-        return view ('project', ['name'=>'wesam' , 'work'=>'programmer']);
+        return view ('index', ['data'=>$data]);
 
     }
 
@@ -102,10 +105,13 @@ class BackendWork extends Controller
         $imageName=time().'.'.$request->image->getClientOriginalExtension();
         $request->image->move('gallary' , $imageName);
         $data->images =$imageName ;
-
+       
         $data->save();
         return redirect()->back()->with('msg', 'image added');
     }
+
+
+
 
     public function deleteImage($id){
         $data = image::FindorFail($id);
