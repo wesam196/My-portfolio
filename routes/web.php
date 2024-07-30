@@ -6,7 +6,7 @@ use App\Http\Controllers\BackendWork;
 
 Route::get('/',[BackendWork::class,'index']);
 
-//Route::get('/project/{id}',[BackendWork::class,'index']);
+Route::get('/project/{id}',[BackendWork::class,'projectDetails']);
 Route::get('/createForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
 Route::get('/read', [BackendWork::class , 'read']);

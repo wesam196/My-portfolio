@@ -11,11 +11,19 @@ class BackendWork extends Controller
     public function index(){
         
         $data = Project::select('id', 'name', 'image')->get();
-        //$projects = ['id' => $data->id, 'name' => $data->name, 'image' => $data->image];
 
         return view ('index', ['data'=>$data]);
 
     }
+
+    public function projectDetails($id){
+        $data = Project::FindOrFail($id);
+        $images = Image::where('projectId', 'LIKE',  $id )->get();
+
+        return view ('project', ['data'=>$data, 'images'=>$images]);
+    }
+
+
 
     public function create(){
 
