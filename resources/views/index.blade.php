@@ -31,7 +31,11 @@
 </head>
 
 <body class="index-page" >
-
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
   <header id="header" class="header d-flex flex-column justify-content-center">
 
     <i class="header-toggle d-xl-none bi bi-list"></i>
