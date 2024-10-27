@@ -119,7 +119,7 @@
                 @endif
 
                 @if($data->link !=0 )
-                <li><strong>Link</strong>{{$data->link}}</li>
+                <li><strong>Link</strong><a target="_blank" href="{{$data->link}}">{{$data->link}}</a></li>
                 @endif
 
                 @if($data->GitHubLink !=0)
