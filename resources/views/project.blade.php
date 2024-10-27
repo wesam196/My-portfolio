@@ -86,7 +86,7 @@
           <div class="swiper-wrapper align-items-center">
 
           @foreach ($images as $image)
-            <div class="swiper-slide">
+            <div class="swiper-slide" >
               <img src="gallary/{{$image->images}}" alt="">
             </div>
             @endforeach
@@ -123,7 +123,7 @@
                 @endif
 
                 @if($data->GitHubLink !=0)
-                <li><strong>GitHub Link</strong> <a href="#">{{$data->GitHubLink}}</a></li>
+                <li><strong>GitHub Link</strong> <a target="_blank" href="{{$data->GitHubLink}}">{{$data->GitHubLink}}</a></li>
                 @endif
 
                 
@@ -139,28 +139,25 @@
     </section><!-- /Portfolio Details Section -->
 
   </main>
-
   <footer id="footer" class="footer position-relative light-background">
     <div class="container">
-      <h3 class="sitename">Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">ًWesam Salem</h3>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+              <a target="_blank" href="https://wa.me/+966541918924"><i class="bi bi-whatsapp"></i></a>
+              <a target="_blank" href="mailto:wesam.a.s196@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a target="_blank" href="https://github.com/wesam196/"><i class="bi bi-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/wesam-s-5a5990137"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span>
+          <span>&copy;</span>  <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
           <!-- You can delete the links only if you've purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      
         </div>
       </div>
     </div>

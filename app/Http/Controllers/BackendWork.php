@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Project;
+use App\Models\project;
 use App\Models\Image;
 
 class BackendWork extends Controller
