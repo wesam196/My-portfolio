@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+
+<base href="{{ url('') }}/">
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Wesam Salem</title>
@@ -63,7 +67,7 @@
 
 <div >
 
-    <h1>This page is not exist</h1>
+    <h1>Page not found</h1>
     
 </div>
 
