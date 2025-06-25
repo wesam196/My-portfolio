@@ -24,6 +24,7 @@ Route::middleware([
         if (Auth::check()) {
             return redirect('/'); // Redirect to the homepage or another page.
         }});
+        
     Route::get('/createForm',[BackendWork::class,'create']);
 Route::post('/add_poject', [BackendWork::class , 'addProject']);
 Route::get('/read', [BackendWork::class , 'read']);
