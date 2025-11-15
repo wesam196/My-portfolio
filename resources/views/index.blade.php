@@ -275,6 +275,18 @@ error_reporting(E_ALL);
 
             </div><!-- Edn Resume Item -->
 
+             <div class="resume-item">
+              <h4>Volunteer Software Developer</h4>
+              <h5>May 2025 to August 2025</h5>
+              <p><em>Al Raeda Social Association </em></p>
+              <p>
+                Handle and manage data files with a focus on efficient storage and practical usage. Develop and implement solutions for
+organizing, storing, and leveraging data to support operational and analytical needs.
+</p>
+
+            </div><!-- Edn Resume Item -->
+
+
             <h3 class="resume-title">Certificates</h3>
             <div class="resume-item">
           
